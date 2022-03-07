@@ -1,0 +1,38 @@
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "userName":"dev",
+    "password":"dev"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "userName":"haint",
+    "password":"password"
+}
+
+###
+
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI1YzIwNzQwMzc5YzUwZGM1MTc4OTciLCJpYXQiOjE2NDY2NDE2NzF9.fVzDVbzOD_lyr84pPmdykUwHWDLaNPyeorECvzpCbsY
+
+{
+    "title":"Vue JS",
+    "desc":"Learning Vue JS on 6h",
+    "url":"https://node-js.com"
+}
+
+###
+
+GET  http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjI1YzIwNzQwMzc5YzUwZGM1MTc4OTciLCJpYXQiOjE2NDY2NDE2NzF9.fVzDVbzOD_lyr84pPmdykUwHWDLaNPyeorECvzpCbsY
+
+
